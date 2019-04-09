@@ -2,7 +2,7 @@
 
 Docker setup for my static sites:
 
-* [casieandseangotohawaii.com](http://casieandseangotohawaii.com/)
+* [casieandseangotohawaii.com](https://casieandseangotohawaii.com/)
 * [conneythecorgi.com](https://conneythecorgi.com/)
 * [cowboythecowdog.com](https://cowboythecowdog.com/)
 
