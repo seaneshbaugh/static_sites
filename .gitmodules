@@ -1,0 +1,9 @@
+[submodule "sites/cowboythecowdog"]
+	path = sites/cowboythecowdog
+	url = git@github.com:seaneshbaugh/cowboythecowdog.git
+[submodule "sites/conneythecorgi"]
+	path = sites/conneythecorgi
+	url = git@github.com:seaneshbaugh/conneythecorgi.git
+[submodule "sites/casieandseangotohawaii"]
+	path = sites/casieandseangotohawaii
+	url = git@github.com:seaneshbaugh/casieandseangotohawaii.git

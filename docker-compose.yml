@@ -1,0 +1,15 @@
+version: "3"
+services:
+  nginx:
+    restart: unless-stopped
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - CERTBOT_EMAIL=seaneshbaugh@gmail.com
+      - RSA_KEY_SIZE=4096
+    volumes:
+      - nginx_secrets:/etc/letsencrypt
+volumes:
+  nginx_secrets:
