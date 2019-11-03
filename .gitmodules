@@ -7,3 +7,6 @@
 [submodule "sites/casieandseangotohawaii"]
 	path = sites/casieandseangotohawaii
 	url = git@github.com:seaneshbaugh/casieandseangotohawaii.git
+[submodule "sites/color"]
+	path = sites/color
+	url = git@github.com:seaneshbaugh/color.git
