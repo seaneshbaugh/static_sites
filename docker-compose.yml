@@ -11,5 +11,7 @@ services:
       - RSA_KEY_SIZE=4096
     volumes:
       - nginx_secrets:/etc/letsencrypt
+      - spaces_cache:/tmp/spaces_cache
 volumes:
   nginx_secrets:
+  spaces_cache:

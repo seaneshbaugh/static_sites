@@ -124,13 +124,17 @@ RUN gem install bundler -v $BUNDLER_VERSION && bundle install
 
 RUN apk del .build-deps
 
-COPY sites/conneythecorgi $APP_HOME
+RUN apk add --update tzdata
 
+COPY sites/conneythecorgi/package.json sites/conneythecorgi/yarn.lock $APP_HOME/
+RUN npm install -g yarn
 RUN yarn install
 
-RUN bundle exec middleman build
+COPY sites/conneythecorgi $APP_HOME
 
-FROM jonasal/nginx-certbot
+RUN bundle exec middleman build --verbose
+
+FROM jonasal/nginx-certbot:0.14
 
 COPY config/nginx/*.conf /etc/nginx/conf.d/
 COPY config/nginx/dhparam.pem /etc/ssl/certs/dhparam.pem
